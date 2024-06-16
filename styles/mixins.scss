@@ -1,0 +1,29 @@
+@mixin desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin mini-desktop {
+    @media (max-width: 1023px) and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin tab {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  
+  @mixin phone {
+    @media (max-width: 480px) {
+      @content;
+    }
+  }
+  
+  @mixin transition($time) {
+    transition: all $time ease-in-out;
+  }
+  
+  

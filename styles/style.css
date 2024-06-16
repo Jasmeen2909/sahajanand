@@ -1,0 +1,72 @@
+.mainHeader {
+  background-color: #fff;
+  color: #333;
+  padding: 10px 0;
+}
+.mainHeader header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.mainHeader .navbar .navbar__menu {
+  display: flex;
+}
+.mainHeader .navbar .navbar__menu .navbar__links {
+  color: #333333;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+@media (min-width: 1024px) {
+  .mainHeader .navbar .navbar__menu .navbar__links {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mainHeader .navbar .navbar__menu .navbar__links {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+@media (max-width: 767px) {
+  .mainHeader .navbar .navbar__menu .navbar__links {
+    color: #fff;
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 480px) {
+  .mainHeader .navbar .navbar__menu .navbar__links {
+    color: #fff;
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+}
+.mainHeader .navbar .navbar__menu .navbar__links:hover {
+  color: #ffcc00;
+}
+@media (max-width: 767px) {
+  .mainHeader .navbar .navbar__menu .navbar__links:hover {
+    color: #00ccff;
+  }
+}
+@media (max-width: 480px) {
+  .mainHeader .navbar .navbar__menu .navbar__links:hover {
+    color: #ff9900;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  height: 95px;
+}/*# sourceMappingURL=style.css.map */
