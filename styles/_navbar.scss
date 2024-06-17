@@ -1,5 +1,5 @@
-@import "globalvar.scss";
-@import "mixins.scss";
+// @import "globalvar.scss";
+// @import "mixins.scss";
 
 
 // .container {
@@ -9,63 +9,63 @@
 //   padding: 0 15px;
 // }
 
-.mainHeader {
-  background-color: #fff;
-  color: #333;
-  padding: 10px 0;
+// .mainHeader {
+//   background-color: #fff;
+//   color: black;
+//   padding: 10px 0;
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-//   .logo {
-//     // later
+//   header {
+//     display: flex;
+//     justify-content: space-between;
+//     align-items: center;
 //   }
 
-  .navbar {
-    .navbar__menu {
-      display: flex;
+//   .logo img{
+//     height:95px;
+// }
 
-      .navbar__links {
-        color: $navLinkColor;
-        text-decoration: none;
-        padding: $navLinkPadding;
-        font-size: $navLinkFontSize;
-        transition: all 0.3s ease;
+//   .navbar {
+//     .navbar__menu {
+//       display: flex;
 
-        @include desktop {
-          font-size: $navLinkFontSizeDesktop;
-        }
+//       .navbar__links {
+//         color: $navLinkColor;
+//         text-decoration: none;
+//         padding: $navLinkPadding;
+//         font-size: $navLinkFontSize;
+//         transition: all 0.3s ease;
 
-        @include mini-desktop {
-          font-size: $navLinkFontSizeminiDesktop;
-          padding: $navLinkPaddingminiDesktop;
-        }
+//         @include desktop {
+//           font-size: $navLinkFontSizeDesktop;
+//         }
 
-        @include tab {
-          color: #fff; 
-          font-size: $navLinkFontSizeTab;
-          padding: $navLinkPaddingTab;
-        }
+//         @include mini-desktop {
+//           font-size: $navLinkFontSizeminiDesktop;
+//           padding: $navLinkPaddingminiDesktop;
+//         }
 
-        @include phone {
-          color: #fff; 
-          font-size: $navLinkFontSizePhone;
-          padding: $navLinkPaddingPhone;
-        }
+//         @include tab {
+//           color: #fff; 
+//           font-size: $navLinkFontSizeTab;
+//           padding: $navLinkPaddingTab;
+//         }
 
-        &:hover {
-          color: $navactiveLinkColor;
-          @include tab {
-            color: $navactiveLinkColorTab;
-          }
-          @include phone {
-            color: $navactiveLinkColorPhone;
-          }
-        }
-      }
-    }
-  }
-}
+//         @include phone {
+//           color: #fff; 
+//           font-size: $navLinkFontSizePhone;
+//           padding: $navLinkPaddingPhone;
+//         }
+
+//         &:hover {
+//           color: $navactiveLinkColor;
+//           @include tab {
+//             color: $navactiveLinkColorTab;
+//           }
+//           @include phone {
+//             color: $navactiveLinkColorPhone;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }

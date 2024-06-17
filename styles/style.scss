@@ -1,15 +1,150 @@
-@import 'navbar';
+@import "globalvar.scss";
+@import "mixins.scss";
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-  }
+    font-family: "PT serif", sans-serif;
+}
 
-.logo{
-    height:95px;
+.mainHeader {
+    background-color: #fff;
+    color: black;
+    padding: 2.5px 0;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
+    }
+
+    .logo img {
+        height: 95px;
+    }
+
+    .navbar {
+        .navbar__menu {
+            display: flex;
+
+            .navbar__links {
+                color: $navLinkColor;
+                text-decoration: none;
+                padding: $navLinkPadding;
+                font-size: $navLinkFontSize;
+                transition: all 0.3s ease;
+
+                @include desktop {
+                    font-size: $navLinkFontSizeDesktop;
+                }
+
+                @include mini-desktop {
+                    font-size: $navLinkFontSizeminiDesktop;
+                    padding: $navLinkPaddingminiDesktop;
+                }
+
+                @include tab {
+                    color: #fff;
+                    font-size: $navLinkFontSizeTab;
+                    padding: $navLinkPaddingTab;
+                }
+
+                @include phone {
+                    color: #fff;
+                    font-size: $navLinkFontSizePhone;
+                    padding: $navLinkPaddingPhone;
+                }
+
+                &:hover {
+                    color: $navactiveLinkColor;
+                    @include tab {
+                        color: $navactiveLinkColorTab;
+                    }
+                    @include phone {
+                        color: $navactiveLinkColorPhone;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mainFooter {
+    background: #252067;
+    color: #fff;
+    padding-bottom: 75px;
+    h5 {
+        font-size: 30px;
+        padding-top: 100px;
+    }
+    .address {
+        padding-top: 32px;
+        font-size: 24px;
+        width: 255px;
+    }
+    ul {
+        padding-top: 32px;
+        font-size: 24px;
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+    p {
+        font-size: 24px;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quick__links {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+    }
+    .quick__links1 {
+        text-decoration: none;
+        color: white;
+        font-size: 24px;
+        padding-top: 32px;
+    }
+}
+
+.bottomFooter {
+    background: #252067;
+    padding: 20px 0px;
+    border-top: 1px solid white;
+}
+.copy_right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+        color: #fff;
+        font-size: 24px;
+        line-height: 21px;
+        margin-bottom: 0px;
+    }
+    @include desktop {
+        font-size: 24px;
+        line-height: 17px;
+    }
+
+    @include phone {
+        flex-direction: column;
+        align-items: center;
+        p {
+            font-size: 14px;
+            line-height: 18px;
+            text-align: center;
+            padding: 10px 0px;
+        }
+    }
 }
