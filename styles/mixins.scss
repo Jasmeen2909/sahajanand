@@ -26,4 +26,7 @@
     transition: all $time ease-in-out;
   }
   
-  
+  @mixin background-cover($image) {
+    background: url(#{$image}) no-repeat center center;
+    background-size: cover;
+  }

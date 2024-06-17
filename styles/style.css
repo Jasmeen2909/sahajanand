@@ -71,6 +71,36 @@ body {
   }
 }
 
+.homeCover {
+  background: url(images/sahajanand-helenium-images-for-amenities-37080818.jpeg) no-repeat center center;
+  background-size: cover;
+  max-width: 1440px;
+  height: 900px;
+}
+.homeCover .container {
+  color: #fff;
+  position: relative;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.homeCover .container .color-overlay {
+  background: linear-gradient(to top right, black);
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  position: absolute;
+}
+.homeCover .container h1 {
+  font-size: 60px;
+  z-index: 1;
+}
+.homeCover .container h2 {
+  font-size: 40px;
+  z-index: 1;
+}
+
 .mainFooter {
   background: #252067;
   color: #fff;
