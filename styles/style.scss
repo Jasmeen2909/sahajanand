@@ -79,17 +79,23 @@ body {
     //max-width: 1440px;
     height: 813px;
     position: relative;
+    overflow: hidden;
+
   
     .container {
       color: $text-color;
       position: relative;
+      max-width: 1440px;
+      width: 100%;
       height: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
-      flex-direction: column; /* Ensure elements stack vertically */
-      align-items: flex-start; /* Align items to the left */
+      flex-direction: column; 
+      align-items: flex-start;
+      padding: 0 0px; 
+
 
 
       .color-overlay {
