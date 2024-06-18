@@ -72,33 +72,39 @@ body {
 }
 
 .homeCover {
-  background: url(../images/homebanner) no-repeat center center;
+  background: url(../images/homebanner.png) no-repeat center center;
   background-size: cover;
   max-width: 1440px;
   height: 900px;
+  position: relative;
 }
 .homeCover .container {
   color: #fff;
   position: relative;
   height: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  display: flex;
+  text-align: center;
 }
 .homeCover .container .color-overlay {
   background: linear-gradient(to top right, black);
   width: 100%;
   height: 100%;
-  opacity: 0.4;
   position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.4;
+}
+.homeCover .container h1, .homeCover .container h2 {
+  z-index: 1;
+  margin: 0;
 }
 .homeCover .container h1 {
   font-size: 60px;
-  z-index: 1;
 }
 .homeCover .container h2 {
   font-size: 40px;
-  z-index: 1;
 }
 
 .mainFooter {
