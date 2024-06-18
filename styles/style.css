@@ -81,7 +81,6 @@ body {
 .homeCover .container {
   color: #fff;
   position: relative;
-  max-width: 1440px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -90,26 +89,64 @@ body {
   text-align: center;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0 0px;
 }
-.homeCover .container .color-overlay {
-  background: linear-gradient(to top right, black, white);
+.homeCover .color-overlay {
+  background: linear-gradient(to top right, black, black, white);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
-  opacity: 0.4;
-}
-.homeCover .container h1, .homeCover .container h2 {
   z-index: 1;
+  opacity: 0.2;
+}
+.homeCover h1, .homeCover h2 {
+  z-index: 2;
   margin: 0;
 }
-.homeCover .container h1 {
+.homeCover h1 {
   font-size: 50px;
 }
-.homeCover .container h2 {
+.homeCover h2 {
   font-size: 80px;
+}
+
+.aboutsection h1 {
+  padding-top: 127px;
+  padding-bottom: 50px;
+  font-size: 50px;
+}
+.aboutsection p {
+  line-height: 30px;
+  width: 795px;
+  font-size: 24px;
+}
+.aboutsection button {
+  color: #fff;
+  background-color: #252067;
+  border-radius: 50px;
+  width: 150px;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 126px;
+}
+.aboutsection .sqimage {
+  padding-top: 100px;
+}
+.aboutsection .rectimage {
+  padding-top: 18px;
+  padding-bottom: 100px;
+}
+
+.services {
+  background: #252067;
+}
+.services h1 {
+  font-size: 50px;
+  color: #fff;
+  text-align: center;
+  padding-top: 63px;
 }
 
 .mainFooter {

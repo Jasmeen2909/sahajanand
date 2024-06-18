@@ -76,16 +76,13 @@ body {
 
 .homeCover {
     @include background-cover($background-image);
-    //max-width: 1440px;
     height: 813px;
     position: relative;
     overflow: hidden;
-
   
     .container {
       color: $text-color;
       position: relative;
-      max-width: 1440px;
       width: 100%;
       height: 100%;
       display: flex;
@@ -94,38 +91,78 @@ body {
       text-align: center;
       flex-direction: column; 
       align-items: flex-start;
-      padding: 0 0px; 
-
-
-
-      .color-overlay {
-         background: linear-gradient(to top right, $overlay-start-color,$overlay-end-color);
-        //background: linear-gradient(to top right, $overlay-start-color,$overlay-mid-color);
-
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: $overlay-opacity;
-      }
+    }
   
-      h1, h2 {
-        z-index: 1;
-        margin: 0;
-      }
+    .color-overlay {
+      background: linear-gradient(to top right, $overlay-start-color,$overlay-mid-color, $overlay-end-color);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      opacity: $overlay-opacity;
+    }
   
-      h1 {
-        font-size: 50px;
-        //margin-bottom: 20px;
-      }
+    h1, h2 {
+      z-index: 2;
+      margin: 0;
+    }
   
-      h2 {
-        font-size: 80px;
-      }
+    h1 {
+      font-size: 50px;
+    }
+  
+    h2 {
+      font-size: 80px;
     }
   }
+  
+.aboutsection{
+     
+        // display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        // max-width: 1440px;
 
+        h1{
+            padding-top: 127px;
+            padding-bottom: 50px;
+            font-size: 50px;
+        }
+        p{
+            line-height: 30px;
+            width: 795px;
+            font-size: 24px;
+        }
+        button{
+            color:#fff;
+            background-color: #252067;
+            border-radius: 50px;
+            width:150px;
+            height: 50px;
+            font-size: 20px;
+            margin-top: 40px;
+            margin-bottom: 126px;
+        }
+        .sqimage{
+            padding-top: 100px;
+        }
+        .rectimage{
+            padding-top: 18px;
+            padding-bottom: 100px;
+        }
+}
+
+.services{
+    background: #252067;
+    h1{
+        font-size: 50px;
+        color:#fff;
+        text-align: center;
+        padding-top: 63px;
+    }
+}
   
 .mainFooter {
     background: #252067;
