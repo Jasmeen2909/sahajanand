@@ -72,7 +72,7 @@ body {
 }
 
 .homeCover {
-  background: url(images/sahajanand-helenium-images-for-amenities-37080818.jpeg) no-repeat center center;
+  background: url(../images/homebanner) no-repeat center center;
   background-size: cover;
   max-width: 1440px;
   height: 900px;
