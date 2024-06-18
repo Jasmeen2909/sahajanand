@@ -88,7 +88,7 @@ body {
   text-align: center;
 }
 .homeCover .container .color-overlay {
-  background: linear-gradient(to top right, black, white);
+  background: linear-gradient(to top right, rgb(54, 51, 51), rgb(77, 68, 68));
   width: 100%;
   height: 100%;
   position: absolute;
