@@ -76,8 +76,8 @@ body {
 
 .homeCover {
     @include background-cover($background-image);
-    max-width: 1440px;
-    height: 900px;
+    //max-width: 1440px;
+    height: 813px;
     position: relative;
   
     .container {
@@ -93,7 +93,7 @@ body {
 
 
       .color-overlay {
-         background: linear-gradient(to top right, $overlay-start-color,$overlay-mid-color, $overlay-end-color);
+         background: linear-gradient(to top right, $overlay-start-color,$overlay-end-color);
         //background: linear-gradient(to top right, $overlay-start-color,$overlay-mid-color);
 
         width: 100%;
@@ -111,11 +111,11 @@ body {
   
       h1 {
         font-size: 50px;
-        margin-bottom: 20px;
+        //margin-bottom: 20px;
       }
   
       h2 {
-        font-size: 40px;
+        font-size: 80px;
       }
     }
   }
