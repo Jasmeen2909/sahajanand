@@ -17,7 +17,8 @@ $navLinkFontSizeminiDesktop: 14px;
 $navLinkFontSizeTab: 12px;
 $navLinkFontSizePhone: 10px;
 
-$background-image: "../images/homebanner";
+$background-image: "../images/homebanner.png";
 $text-color: #fff;
-$overlay-color: rgba(0, 0, 0, 0.4); // Black color with 40% opacity
-$overlay-opacity: 0.4;
+$overlay-start-color: black;
+$overlay-end-color: white;
+$overlay-opacity: 0.8;

@@ -90,7 +90,7 @@ body {
       text-align: center;
   
       .color-overlay {
-        background: linear-gradient(to top right, #{$overlay-color});
+        background: linear-gradient(to top right, $overlay-start-color, $overlay-end-color);
         width: 100%;
         height: 100%;
         position: absolute;
