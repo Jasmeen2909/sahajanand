@@ -87,6 +87,7 @@ body {
   justify-content: center;
   text-align: center;
   flex-direction: column; /* Ensure elements stack vertically */
+  align-items: flex-start; /* Align items to the left */
 }
 .homeCover .container .color-overlay {
   background: linear-gradient(to top right, black, rgb(77, 68, 68), white);
@@ -106,7 +107,7 @@ body {
   margin-bottom: 20px;
 }
 .homeCover .container h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 .mainFooter {
