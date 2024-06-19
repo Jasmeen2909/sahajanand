@@ -118,7 +118,7 @@ body {
 }
 .aboutsection p {
   line-height: 30px;
-  width: 795px;
+  width: 725px;
   font-size: 24px;
 }
 .aboutsection button {
@@ -130,6 +130,9 @@ body {
   font-size: 20px;
   margin-top: 40px;
   margin-bottom: 126px;
+}
+.aboutsection .aboutcontent {
+  padding-left: 74px;
 }
 .aboutsection .sqimage {
   padding-top: 100px;
@@ -147,6 +150,24 @@ body {
   color: #fff;
   text-align: center;
   padding-top: 63px;
+  padding-bottom: 59px;
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 52px;
+}
+.services .box {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 40px;
+}
+.services .box h3 {
+  padding-bottom: 12px;
 }
 
 .mainFooter {
