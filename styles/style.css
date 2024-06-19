@@ -100,7 +100,8 @@ body {
   z-index: 1;
   opacity: 0.2;
 }
-.homeCover h1, .homeCover h2 {
+.homeCover h1,
+.homeCover h2 {
   z-index: 2;
   margin: 0;
 }
@@ -118,7 +119,7 @@ body {
 }
 .aboutsection p {
   line-height: 30px;
-  width: 725px;
+  width: 755px;
   font-size: 24px;
 }
 .aboutsection button {
@@ -136,28 +137,40 @@ body {
 }
 .aboutsection .sqimage {
   padding-top: 100px;
+  position: relative;
+}
+.aboutsection .sqimage::before {
+  content: "25 Years of Excellence";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #252067;
+  position: absolute;
+  z-index: 1;
 }
 .aboutsection .rectimage {
   padding-top: 18px;
   padding-bottom: 100px;
 }
 
-.services {
+.servicesection {
   background: #252067;
+  padding-bottom: 130px;
 }
-.services h1 {
+.servicesection h1 {
   font-size: 50px;
   color: #fff;
   text-align: center;
   padding-top: 63px;
   padding-bottom: 59px;
 }
-.services .box-container {
+.servicesection .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 52px;
 }
-.services .box {
+.servicesection .box {
+  position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   background: #fff;
   text-align: left;
@@ -166,8 +179,21 @@ body {
   padding-right: 20px;
   padding-bottom: 40px;
 }
-.services .box h3 {
+.servicesection .box h3 {
   padding-bottom: 12px;
+}
+.servicesection .arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: black;
+}
+
+.equipmentsection h1 {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 50px;
 }
 
 .mainFooter {
