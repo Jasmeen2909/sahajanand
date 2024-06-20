@@ -11,10 +11,31 @@ body {
     font-family: "PT serif", sans-serif;
 }
 
+.sectionPadding {
+    padding: 100px 0;
+}
+
+.sectionTitle{
+    font-size: 50px;
+}
+
+p{
+    font-size: 24px;
+}
+
+.defaultBtn{
+    color: #fff;
+    background-color: #252067;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 50px;
+    padding: 16px 24px;
+}
+
 .mainHeader {
     background-color: #fff;
     color: black;
-    padding: 2.5px 0;
+    padding: 12.5px 0;
 
     header {
         display: flex;
@@ -78,19 +99,13 @@ body {
     height: 813px;
     position: relative;
     overflow: hidden;
-
-    .container {
-        color: $text-color;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
 
     .color-overlay {
         background: linear-gradient(to top right, $overlay-start-color, $overlay-mid-color, $overlay-end-color);
@@ -102,196 +117,62 @@ body {
         z-index: 1;
         opacity: $overlay-opacity;
     }
-
     h1,
     h2 {
         z-index: 2;
         margin: 0;
     }
-
     h1 {
         font-size: 50px;
     }
-
     h2 {
         font-size: 80px;
     }
 }
 
-// .aboutsection {
-//     h1 {
-//         padding-top: 127px;
-//         padding-bottom: 50px;
-//         font-size: 50px;
-//     }
-//     p {
-//         line-height: 30px;
-//         width: 755px;
-//         font-size: 24px;
-//     }
-//     button {
-//         color: #fff;
-//         background-color: #252067;
-//         border-radius: 50px;
-//         width: 150px;
-//         height: 50px;
-//         font-size: 20px;
-//         margin-top: 40px;
-//         margin-bottom: 126px;
-//     }
-//     .aboutcontent {
-//         padding-left: 74px;
-//     }
-//     .sqimage {
-//         padding-top: 100px;
-//         position: relative;
-//         &::before {
-//             content: "25 Years of Excellence";
-//             display: block;
-//             width: 50px; 
-//             height: 50px; 
-//             background-color: #252067; 
-//             position: absolute;
-//             z-index: 1;
-//         }
-//     }
-//     .rectimage {
-//         padding-top: 18px;
-//         padding-bottom: 100px;
-//     }
-// }
-
-.aboutsection {
-    h1 {
-        padding-top: 127px;
-        padding-bottom: 50px;
-        font-size: 50px;
-    }
-
-    p {
-        line-height: 30px;
-        width: 755px;
-        font-size: 24px;
-    }
-
-    button {
-        color: #fff;
+.aboutsection{
+    .blueBox{
         background-color: #252067;
-        border-radius: 50px;
-        width: 150px;
-        height: 50px;
-        font-size: 20px;
-        margin-top: 40px;
-        margin-bottom: 126px;
-    }
-
-    .aboutcontent {
-        padding-left: 74px;
-    }
-
-    .sqimage {
-        padding-top: 100px;
-        width: calc(50% - 5px);
-        margin-right: 10px;
-        position: relative;
-
-        &::before {
-            content: "25 Years of Excellence";
-            display: block;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(37, 32, 103, 0.8);
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-            font-size: 20px;
-            text-align: center;
-            padding: 10px;
-            box-sizing: border-box;
-        }
-    }
-
-    .rectimage {
-        padding-top: 18px;
-        padding-bottom: 100px;
-        width: 100%;
-    }
-
-    .col-5 {
+        height: 260px;
+        color: #fff;
+        border-radius: 20px;
         display: flex;
-        flex-wrap: wrap;
+        align-items: center;
+        padding: 28px;
 
-        .sqimage {
-            width: 50%;
-        }
-
-        .rectimage {
-            width: 100%;
-            margin-top: 10px;
+        p{
+            font-size: 35px;
         }
     }
 
-    @media screen and (max-width: 768px) {
-        h1 {
-            font-size: 36px;
-            padding-top: 50px;
-            padding-bottom: 20px;
-        }
-
-        p {
-            font-size: 18px;
-            width: 100%;
-        }
-
-        button {
-            width: 100%;
-            font-size: 18px;
-        }
-
-        .aboutcontent {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        .col-5 {
-            flex-direction: column;
-            padding: 0;
-
-            .sqimage,
-            .rectimage {
-                width: 100%;
-                margin-right: 0;
-            }
-
-            .rectimage {
-                margin-top: 10px;
-                padding-top: 10px;
-                padding-bottom: 50px;
-            }
-        }
+    .sqimage{
+        height: 260px;
     }
+    .rectimage{
+        margin-top: 18px;
+        height: 216px;
+    }
+
+    h1{
+        margin-bottom: 40px;
+    }
+    .aboutcontent{
+        padding-left: 50px;
+    }
+    
 }
-
 
 .servicesection {
     background: #252067;
-    padding-bottom: 130px;
     h1 {
-        font-size: 50px;
         color: #fff;
         text-align: center;
-        padding-top: 63px;
         padding-bottom: 59px;
     }
     .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-        gap: 52px;
+        gap: 51px;
     }
     .box {
         position: relative;
@@ -301,9 +182,11 @@ body {
         padding-top: 60px;
         padding-left: 40px;
         padding-right: 20px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
+        height: 410px;
 
         h3 {
+            font-size: 30px;
             padding-bottom: 12px;
         }
     }
@@ -317,53 +200,66 @@ body {
 }
 
 .equipmentsection {
-    padding: 50px 0;
     text-align: center;
-  
     h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
+        font-size: 50px;
+        padding-bottom: 52px;
     }
-  
-    .slider {
-      display: flex;
-      overflow: hidden;
-      position: relative;
-  
-      > div {
-        flex: 0 0 33.33%; /* Three items visible at a time */
-        max-width: 33.33%;
-        box-sizing: border-box;
-        padding: 10px;
+
+    //* Customize the left arrow */
+    .slider .slick-prev:before {
+        content: "<";
+        font-size: 50px;
+        color: black;
+    }
+
+    /* Customize the right arrow */
+    .slider .slick-next:before {
+        content: ">";
+        font-size: 50px;
+        color: black;
+    }
+
+    .slider-item {
         position: relative;
-  
+        display: inline-block;
+        margin-bottom: 50px; // Added space to avoid overlap with the next item
+
         img {
-          width: 100%;
-          height: auto;
-          border-radius: 10px;
+            display: block;
+            margin: 0 auto;
         }
-  
-        h4 {
-          margin-top: 15px;
-          font-size: 18px;
-          background: #fff;
-          padding: 10px;
-          border-radius: 10px;
-          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+        .slider-title {
+            background-color: #fff;
+            height: 98px;
+            width: 311px;
+            box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.20);
+            display: inline-block;
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h4 {
+                margin: 0;
+            }
         }
-      }
     }
-}  
+}
 
 
 .mainFooter {
     background: #252067;
     color: #fff;
     padding-bottom: 75px;
-    
+
     h5 {
         font-size: 30px;
-        padding-top: 100px;
     }
 
     .address {
@@ -375,7 +271,7 @@ body {
     ul {
         padding-top: 32px;
         font-size: 24px;
-        
+
         a {
             color: #fff;
             text-decoration: none;
@@ -408,7 +304,6 @@ body {
         flex-direction: column;
     }
 }
-
 
 .bottomFooter {
     background: #252067;
