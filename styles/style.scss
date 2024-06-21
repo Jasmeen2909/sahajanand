@@ -95,7 +95,7 @@ p{
 }
 
 .homeCover {
-    @include background-cover($background-image);
+    @include background-cover("../images/homebanner.png");
     height: 813px;
     position: relative;
     overflow: hidden;
@@ -108,17 +108,16 @@ p{
     align-items: flex-start;
 
     .color-overlay {
-        background: linear-gradient(to top right, $overlay-start-color, $overlay-mid-color, $overlay-end-color);
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         z-index: 1;
-        opacity: $overlay-opacity;
+        //opacity: $overlay-opacity;
     }
-    h1,
-    h2 {
+    h1,h2{
         z-index: 2;
         margin: 0;
     }
@@ -335,5 +334,153 @@ p{
             text-align: center;
             padding: 10px 0px;
         }
+    }
+}
+
+//about us page
+.aboutCover {
+    @include background-cover("../images/contactbanner.png");
+    height: 456px;
+    position: relative;
+    overflow: hidden;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .color-overlay {
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    h1{
+        z-index: 2;
+        margin: 0;
+    }
+}
+
+.aboutsection{
+    .wrapper{
+        padding-top:100px;
+    }
+
+}
+
+//contact us page
+.contactCover {
+    @include background-cover("../images/aboutbanner.png");
+    height: 456px;
+    position: relative;
+    overflow: hidden;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .color-overlay {
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    h1{
+        z-index: 2;
+        margin: 0;
+    }
+}
+
+.mainSection{
+   h1{
+    padding-bottom: 40px;
+   } 
+   h4{
+    padding-bottom: 21px;
+   }
+   p{
+    padding-bottom: 31px;
+   }
+   .form-label{
+    font-size: 24px;
+   }
+   .form-control{
+    background-color:#DBDBDB66;
+   }
+}
+
+//services page
+.serviceCover {
+    @include background-cover("../images/servicebanner.png");
+    height: 456px;
+    position: relative;
+    overflow: hidden;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .color-overlay {
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    h1{
+        z-index: 2;
+        margin: 0;
+    }
+}
+
+.servicessection {
+    h1 {
+        color: #fff;
+        text-align: center;
+        padding-bottom: 59px;
+    }
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 51px;
+    }
+    .box {
+        position: relative;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        text-align: left;
+        padding-top: 60px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        height: 410px;
+
+        h3 {
+            font-size: 30px;
+            padding-bottom: 12px;
+        }
+    }
+    .arrow-icon {
+        position: absolute;
+        top: 20px; // Adjust as needed
+        right: 20px; // Adjust as needed
+        font-size: 24px;
+        color: black;
     }
 }

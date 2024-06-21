@@ -107,17 +107,15 @@ p {
   align-items: flex-start;
 }
 .homeCover .color-overlay {
-  background: linear-gradient(to top right, black, black, white);
+  background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
-  opacity: 0.2;
 }
-.homeCover h1,
-.homeCover h2 {
+.homeCover h1, .homeCover h2 {
   z-index: 2;
   margin: 0;
 }
@@ -315,4 +313,141 @@ p {
     text-align: center;
     padding: 10px 0px;
   }
+}
+
+.aboutCover {
+  background: url(../images/contactbanner.png) no-repeat center center;
+  background-size: cover;
+  height: 456px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.aboutCover .color-overlay {
+  background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.aboutCover h1 {
+  z-index: 2;
+  margin: 0;
+}
+
+.aboutsection .wrapper {
+  padding-top: 100px;
+}
+
+.contactCover {
+  background: url(../images/aboutbanner.png) no-repeat center center;
+  background-size: cover;
+  height: 456px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contactCover .color-overlay {
+  background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.contactCover h1 {
+  z-index: 2;
+  margin: 0;
+}
+
+.mainSection h1 {
+  padding-bottom: 40px;
+}
+.mainSection h4 {
+  padding-bottom: 21px;
+}
+.mainSection p {
+  padding-bottom: 31px;
+}
+.mainSection .form-label {
+  font-size: 24px;
+}
+.mainSection .form-control {
+  background-color: rgba(219, 219, 219, 0.4);
+}
+
+.serviceCover {
+  background: url(../images/servicebanner.png) no-repeat center center;
+  background-size: cover;
+  height: 456px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.serviceCover .color-overlay {
+  background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.serviceCover h1 {
+  z-index: 2;
+  margin: 0;
+}
+
+.servicessection h1 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 59px;
+}
+.servicessection .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+  gap: 51px;
+}
+.servicessection .box {
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  text-align: left;
+  padding-top: 60px;
+  padding-left: 40px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  height: 410px;
+}
+.servicessection .box h3 {
+  font-size: 30px;
+  padding-bottom: 12px;
+}
+.servicessection .arrow-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  color: black;
 }/*# sourceMappingURL=style.css.map */
