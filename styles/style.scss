@@ -36,63 +36,102 @@ p{
     background-color: #fff;
     color: black;
     padding: 12.5px 0;
-
+  
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        max-width: 1440px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1440px;
     }
-
+  
     .logo img {
-        height: 95px;
+      height: 95px;
     }
-
+  
     .navbar {
-        .navbar__menu {
-            display: flex;
+      .navbar__menu {
+        display: flex;
+  
+        .navbar__links {
+          color: $navLinkColor;
+          text-decoration: none;
+          padding: $navLinkPadding;
+          font-size: $navLinkFontSize;
+          transition: all 0.3s ease;
+          align-items: center;
+          display: flex;
 
-            .navbar__links {
-                color: $navLinkColor;
-                text-decoration: none;
-                padding: $navLinkPadding;
-                font-size: $navLinkFontSize;
-                transition: all 0.3s ease;
-
-                @include desktop {
-                    font-size: $navLinkFontSizeDesktop;
-                }
-
-                @include mini-desktop {
-                    font-size: $navLinkFontSizeminiDesktop;
-                    padding: $navLinkPaddingminiDesktop;
-                }
-
-                @include tab {
-                    color: #fff;
-                    font-size: $navLinkFontSizeTab;
-                    padding: $navLinkPaddingTab;
-                }
-
-                @include phone {
-                    color: #fff;
-                    font-size: $navLinkFontSizePhone;
-                    padding: $navLinkPaddingPhone;
-                }
-
-                &:hover {
-                    color: $navactiveLinkColor;
-                    @include tab {
-                        color: $navactiveLinkColorTab;
-                    }
-                    @include phone {
-                        color: $navactiveLinkColorPhone;
-                    }
-                }
+  
+          @include desktop {
+            font-size: $navLinkFontSizeDesktop;
+          }
+  
+          @include mini-desktop {
+            font-size: $navLinkFontSizeminiDesktop;
+            padding: $navLinkPaddingminiDesktop;
+          }
+  
+          @include tab {
+            color: #fff;
+            font-size: $navLinkFontSizeTab;
+            padding: $navLinkPaddingTab;
+          }
+  
+          @include phone {
+            color: #fff;
+            font-size: $navLinkFontSizePhone;
+            padding: $navLinkPaddingPhone;
+          }
+  
+          &:hover {
+            color: $navactiveLinkColor;
+            @include tab {
+              color: $navactiveLinkColorTab;
             }
+            @include phone {
+              color: $navactiveLinkColorPhone;
+            }
+          }
         }
+  
+        .dropdown {
+            position: relative;
+            display: flex;
+            align-items: center;
+  
+    
+          .dropdown-menu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background: #fff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            min-width: 200px;
+  
+            .dropdown-item {
+              padding: 10px 15px;
+              color: #000;
+              text-decoration: none;
+              display: block;
+  
+              &:hover {
+                background: #252067;
+                color: #fff;
+              }
+            }
+          }
+  
+          &:hover .dropdown-menu {
+            display: block;
+          }
+        }
+      }
     }
-}
+  }
+  
+
 
 .homeCover {
     @include background-cover("../images/homebanner.png");
