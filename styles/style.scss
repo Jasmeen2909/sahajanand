@@ -106,8 +106,8 @@ p{
             top: 100%;
             left: 0;
             background: #fff;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.45);
+            z-index: 2;
             min-width: 200px;
   
             .dropdown-item {
@@ -131,8 +131,6 @@ p{
     }
   }
   
-
-
 .homeCover {
     @include background-cover("../images/homebanner.png");
     height: 813px;
@@ -522,4 +520,86 @@ p{
         font-size: 24px;
         color: black;
     }
+}
+
+.serviceDetail{
+    h1{
+        padding-bottom: 45px;
+    }
+    h4{
+        padding-bottom: 20px;
+
+    }
+    li{
+        font-size: 24px;
+    }
+    img{
+        width: 600px;
+        padding-top: 70px;
+    }
+    .image{
+        padding-top: 0px;
+        width: 600px;
+    }
+}
+
+.masterCover{
+        @include background-cover("../images/equipbanner.png");
+        height: 456px;
+        position: relative;
+        overflow: hidden;
+        color: $text-color;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        align-items: flex-start;
+    
+        .color-overlay {
+            background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        h1{
+            z-index: 2;
+            margin: 0;
+        }
+    }
+
+
+.inhouse {
+    h1 {
+        padding-bottom: 59px;
+    }
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
+        gap: 51px;
+    }
+    .box {
+        position: relative; 
+        text-align: left;
+        padding-top: 60px;
+        padding-left: 40px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        height: 400px;
+        img{
+            width: 400px;
+
+        }
+        a{
+            text-decoration: none;
+            color:black;
+            font-size: 24px;
+        }
+    }
+    
+
+    
 }
