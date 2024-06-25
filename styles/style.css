@@ -529,27 +529,35 @@ p {
 }
 
 .inhouse h1 {
-  padding-bottom: 59px;
+  padding-bottom: 54px;
 }
 .inhouse .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  gap: 51px;
+  gap: 90px;
 }
 .inhouse .box {
   position: relative;
   text-align: left;
-  padding-top: 60px;
-  padding-left: 40px;
-  padding-right: 20px;
-  padding-bottom: 20px;
   height: 400px;
 }
 .inhouse .box img {
   width: 400px;
+  height: 400px;
 }
 .inhouse .box a {
   text-decoration: none;
   color: black;
+  font-size: 24px;
+}
+
+.equipdetail h1 {
+  padding-bottom: 30px;
+}
+.equipdetail img {
+  width: 400px;
+  height: 400px;
+}
+.equipdetail ul {
   font-size: 24px;
 }/*# sourceMappingURL=style.css.map */
