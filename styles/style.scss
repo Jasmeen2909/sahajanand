@@ -613,3 +613,50 @@ p{
         font-size: 24px;
     }
 }
+
+.clientCover{
+    @include background-cover("../images/clientbanner.png");
+    height: 456px;
+    position: relative;
+    overflow: hidden;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .color-overlay {
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+    h1{
+        z-index: 2;
+        margin: 0;
+    }
+}
+
+.clientsection {
+    h1 {
+        color: black;
+        //text-align: center;
+        padding-bottom: 37px;
+        padding-top: 100px;
+    }
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        //gap: 51px;
+    }
+    .box {
+        position: relative;
+        background: #fff;
+        //text-align: left;
+    }
+}

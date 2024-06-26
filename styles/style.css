@@ -560,4 +560,46 @@ p {
 }
 .equipdetail ul {
   font-size: 24px;
+}
+
+.clientCover {
+  background: url(../images/clientbanner.png) no-repeat center center;
+  background-size: cover;
+  height: 456px;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.clientCover .color-overlay {
+  background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.clientCover h1 {
+  z-index: 2;
+  margin: 0;
+}
+
+.clientsection h1 {
+  color: black;
+  padding-bottom: 37px;
+  padding-top: 100px;
+}
+.clientsection .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.clientsection .box {
+  position: relative;
+  background: #fff;
 }/*# sourceMappingURL=style.css.map */
