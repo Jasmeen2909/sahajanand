@@ -15,124 +15,171 @@ body {
     padding: 100px 0;
 }
 
-.sectionTitle{
+.sectionTitle {
     font-size: 50px;
+
+        @include desktop {
+            font-size: 50px;
+        }
+
+        @include mini-desktop {
+            font-size: 40px;
+        }
+
+        @include tab {
+            font-size: 30px;
+        }
+
+        @include phone {
+            font-size: 20px;
+        }
 }
 
-p{
+p {
     font-size: 24px;
+    @include desktop {
+        font-size: 24px;
+    }
+
+    @include mini-desktop {
+        font-size: 20px;
+    }
+
+    @include tab {
+        font-size: 18px;
+    }
+
+    @include phone {
+        font-size: 15px;
+    }
 }
 
-.defaultBtn{
+.defaultBtn {
     color: #fff;
     background-color: #252067;
     text-decoration: none;
     font-size: 20px;
     border-radius: 50px;
     padding: 16px 24px;
+
+    @include desktop {
+        font-size: 18px;
+    }
+
+    @include mini-desktop {
+        font-size: 16px;
+        padding: 14px 22px;
+    }
+
+    @include tab {
+        font-size: 14px;
+    }
+
+    @include phone {
+        font-size: 12px;
+        padding: 12px 20px;
+    }
 }
 
 .mainHeader {
     background-color: #fff;
     color: black;
     padding: 12.5px 0;
-  
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1440px;
-    }
-  
-    .logo img {
-      height: 95px;
-    }
-  
-    .navbar {
-      .navbar__menu {
-        display: flex;
-  
-        .navbar__links {
-          color: $navLinkColor;
-          text-decoration: none;
-          padding: $navLinkPadding;
-          font-size: $navLinkFontSize;
-          transition: all 0.3s ease;
-          align-items: center;
-          display: flex;
 
-  
-          @include desktop {
-            font-size: $navLinkFontSizeDesktop;
-          }
-  
-          @include mini-desktop {
-            font-size: $navLinkFontSizeminiDesktop;
-            padding: $navLinkPaddingminiDesktop;
-          }
-  
-          @include tab {
-            color: #fff;
-            font-size: $navLinkFontSizeTab;
-            padding: $navLinkPaddingTab;
-          }
-  
-          @include phone {
-            color: #fff;
-            font-size: $navLinkFontSizePhone;
-            padding: $navLinkPaddingPhone;
-          }
-  
-          &:hover {
-            color: $navactiveLinkColor;
-            @include tab {
-              color: $navactiveLinkColorTab;
-            }
-            @include phone {
-              color: $navactiveLinkColorPhone;
-            }
-          }
-        }
-  
-        .dropdown {
-            position: relative;
-            display: flex;
-            align-items: center;
-  
-    
-          .dropdown-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            background: #fff;
-            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.45);
-            z-index: 2;
-            min-width: 200px;
-  
-            .dropdown-item {
-              padding: 10px 15px;
-              color: #000;
-              text-decoration: none;
-              display: block;
-  
-              &:hover {
-                background: #252067;
-                color: #fff;
-              }
-            }
-          }
-  
-          &:hover .dropdown-menu {
-            display: block;
-          }
-        }
-      }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1440px;
     }
-  }
-  
+
+    .logo img {
+        height: 95px;
+    }
+
+    .navbar {
+        .navbar__menu {
+            display: flex;
+
+            .navbar__links {
+                color: $navLinkColor;
+                text-decoration: none;
+                padding: $navLinkPadding;
+                font-size: $navLinkFontSize;
+                transition: all 0.3s ease;
+                align-items: center;
+                display: flex;
+
+                @include desktop {
+                    font-size: $navLinkFontSizeDesktop;
+                }
+
+                @include mini-desktop {
+                    font-size: $navLinkFontSizeminiDesktop;
+                    padding: $navLinkPaddingminiDesktop;
+                }
+
+                @include tab {
+                    color: #fff;
+                    font-size: $navLinkFontSizeTab;
+                    padding: $navLinkPaddingTab;
+                }
+
+                @include phone {
+                    color: #fff;
+                    font-size: $navLinkFontSizePhone;
+                    padding: $navLinkPaddingPhone;
+                }
+
+                &:hover {
+                    color: $navactiveLinkColor;
+                    @include tab {
+                        color: $navactiveLinkColorTab;
+                    }
+                    @include phone {
+                        color: $navactiveLinkColorPhone;
+                    }
+                }
+            }
+
+            .dropdown {
+                position: relative;
+                display: flex;
+                align-items: center;
+
+                .dropdown-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    background: #fff;
+                    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.45);
+                    z-index: 2;
+                    min-width: 200px;
+
+                    .dropdown-item {
+                        padding: 10px 15px;
+                        color: #000;
+                        text-decoration: none;
+                        display: block;
+
+                        &:hover {
+                            background: #252067;
+                            color: #fff;
+                        }
+                    }
+                }
+
+                &:hover .dropdown-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 .homeCover {
-    @include background-cover("../images/homebanner.png");
+    @include cover-section("../images/homebanner.png");
     height: 813px;
     position: relative;
     overflow: hidden;
@@ -145,7 +192,7 @@ p{
     align-items: flex-start;
 
     .color-overlay {
-        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
+        background: linear-gradient(246deg, rgba(0, 0, 0, 0) 27.93%, #000 102.46%);
         width: 100%;
         height: 100%;
         position: absolute;
@@ -154,20 +201,56 @@ p{
         z-index: 1;
         //opacity: $overlay-opacity;
     }
-    h1,h2{
+
+    h1,
+    h2 {
         z-index: 2;
         margin: 0;
     }
+
     h1 {
         font-size: 50px;
+
+        @include desktop {
+            font-size: 50px;
+        }
+
+        @include mini-desktop {
+            font-size: 40px;
+        }
+
+        @include tab {
+            font-size: 30px;
+        }
+
+        @include phone {
+            font-size: 20px;
+        }
     }
+
     h2 {
         font-size: 80px;
+
+        @include desktop {
+            font-size: 80px;
+        }
+
+        @include mini-desktop {
+            font-size: 60px;
+        }
+
+        @include tab {
+            font-size: 50px;
+        }
+
+        @include phone {
+            font-size: 40px;
+        }
     }
 }
 
-.aboutsection{
-    .blueBox{
+.aboutsection {
+    .blueBox {
         background-color: #252067;
         height: 260px;
         color: #fff;
@@ -176,26 +259,127 @@ p{
         align-items: center;
         padding: 28px;
 
-        p{
+        p {
             font-size: 35px;
+
+            @include desktop {
+                font-size: 35px;
+            }
+
+            @include mini-desktop {
+                font-size: 30px;
+            }
+
+            @include tab {
+                font-size: 25px;
+            }
+
+            @include phone {
+                font-size: 20px;
+            }
+        }
+
+        @include desktop {
+            height: 260px;
+            padding: 28px;
+        }
+
+        @include mini-desktop {
+            height: 220px;
+            padding: 24px;
+        }
+
+        @include tab {
+            height: 180px;
+            padding: 20px;
+        }
+
+        @include phone {
+            height: 140px;
+            padding: 16px;
         }
     }
 
-    .sqimage{
+    .sqimage {
         height: 260px;
-    }
-    .rectimage{
-        margin-top: 18px;
-        height: 216px;
+
+        @include desktop {
+            height: 260px;
+        }
+
+        @include mini-desktop {
+            height: 220px;
+        }
+
+        @include tab {
+            height: 180px;
+        }
+
+        @include phone {
+            height: 140px;
+        }
     }
 
-    h1{
+    .rectimage {
+        margin-top: 18px;
+        height: 216px;
+
+        @include desktop {
+            height: 216px;
+        }
+
+        @include mini-desktop {
+            height: 180px;
+        }
+
+        @include tab {
+            height: 150px;
+        }
+
+        @include phone {
+            height: 120px;
+        }
+    }
+
+    h1 {
         margin-bottom: 40px;
+
+        @include desktop {
+            font-size: 50px;
+        }
+
+        @include mini-desktop {
+            font-size: 40px;
+        }
+
+        @include tab {
+            font-size: 30px;
+        }
+
+        @include phone {
+            font-size: 20px;
+        }
     }
-    .aboutcontent{
+
+    .aboutcontent {
         padding-left: 50px;
+
+        @include desktop {
+            padding-left: 50px;
+        }
+
+        @include mini-desktop {
+            padding-left: 40px;
+        }
+
+        @include tab {
+            padding-left: 30px;
+        }
+
+        @include phone {
+            padding-left: 20px;
+        }
     }
-    
 }
 
 .servicesection {
@@ -204,12 +388,40 @@ p{
         color: #fff;
         text-align: center;
         padding-bottom: 59px;
+
+        @include desktop {
+            font-size: 50px;
+        }
+
+        @include mini-desktop {
+            font-size: 40px;
+        }
+
+        @include tab {
+            font-size: 30px;
+        }
+
+        @include phone {
+            font-size: 20px;
+        }
     }
+
     .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         gap: 51px;
+
+        @include tab {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        @include phone {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
     }
+
     .box {
         position: relative;
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -221,17 +433,58 @@ p{
         padding-bottom: 20px;
         height: 410px;
 
+        @include desktop {
+            height: 410;
+        }
+
+        @include mini-desktop {
+            height: 350px;
+        }
+
+        @include tab {
+            height: 300px;
+        }
+
+        @include phone {
+            height: 250px;
+        }
+
         h3 {
             font-size: 30px;
             padding-bottom: 12px;
+
+            @include tab {
+                font-size: 25px;
+            }
+
+            @include phone {
+                font-size: 20px;
+            }
         }
     }
+
     .arrow-icon {
         position: absolute;
         top: 20px; // Adjust as needed
         right: 20px; // Adjust as needed
         font-size: 24px;
         color: black;
+
+        @include tab {
+            font-size: 20px;
+        }
+
+        @include phone {
+            font-size: 15px;
+        }
+    }
+
+    @include tab {
+        padding: 40px 20px;
+    }
+
+    @include phone {
+        padding: 30px 15px;
     }
 }
 
@@ -240,6 +493,26 @@ p{
     h1 {
         font-size: 50px;
         padding-bottom: 52px;
+
+        @include desktop {
+            font-size: 50px;
+            padding-bottom: 40px;
+        }
+
+        @include mini-desktop {
+            font-size: 40px;
+            padding-bottom: 30px;
+        }
+
+        @include tab {
+            font-size: 30px;
+            padding-bottom: 20px;
+        }
+
+        @include phone {
+            font-size: 20px;
+            padding-bottom: 15px;
+        }
     }
 
     //* Customize the left arrow */
@@ -247,6 +520,14 @@ p{
         content: "<";
         font-size: 50px;
         color: black;
+
+        @include tab {
+            font-size: 20px;
+        }
+
+        @include phone {
+            font-size: 10px;
+        }
     }
 
     /* Customize the right arrow */
@@ -254,23 +535,43 @@ p{
         content: ">";
         font-size: 50px;
         color: black;
+
+        @include tab {
+            font-size: 20px;
+        }
+
+        @include phone {
+            font-size: 10px;
+        }
     }
 
     .slider-item {
         position: relative;
         display: inline-block;
-        margin-bottom: 50px; // Added space to avoid overlap with the next item
+        margin-bottom: 50px; // Added space to avoid overlap with the next
+
+        @include tab {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        @include phone {
+            margin-bottom: 30px;
+        }
 
         img {
             display: block;
             margin: 0 auto;
+            max-width: 100%;
+            height: auto;
         }
 
         .slider-title {
             background-color: #fff;
             height: 98px;
             width: 311px;
-            box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.20);
+            box-shadow: 0px 4px 30px 5px rgba(0, 0, 0, 0.2);
             display: inline-block;
             text-align: center;
             position: absolute;
@@ -283,11 +584,50 @@ p{
 
             h4 {
                 margin: 0;
+                @include desktop {
+                    font-size: 24px;
+                }
+
+                @include mini-desktop {
+                    font-size: 20px;
+                }
+
+                @include tab {
+                    font-size: 18px;
+                }
+
+                @include phone {
+                    font-size: 15px;
+                }
+            }
+            @include desktop {
+                width: auto;
+                height: 110;
+                padding: 14px;
+                //bottom: -70px;
+            }
+            @include mini-desktop {
+                width: auto;
+                height: 100;
+                padding: 12px;
+                //: -70px;
+            }
+            @include tab {
+                width: auto;
+                height: 90;
+                padding: 10px;
+                //: -70px;
+            }
+
+            @include phone {
+                width: auto;
+                padding: 8px;
+                height: 80px;
+                //bottom: -60px;
             }
         }
     }
 }
-
 
 .mainFooter {
     background: #252067;
@@ -296,12 +636,36 @@ p{
 
     h5 {
         font-size: 30px;
+        @include tab {
+            font-size: 28px;
+        }
+
+        @include phone {
+            font-size: 26px;
+        }
     }
 
     .address {
         padding-top: 32px;
         font-size: 24px;
         width: 255px;
+
+        @include desktop {
+            font-size: 24px;
+        }
+
+        @include mini-desktop {
+            font-size: 20px;
+        }
+
+        @include tab {
+            font-size: 18px;
+        }
+
+        @include phone {
+            font-size: 15px;
+            width: 100%;
+        }
     }
 
     ul {
@@ -312,10 +676,41 @@ p{
             color: #fff;
             text-decoration: none;
         }
+
+        @include desktop {
+            font-size: 24px;
+        }
+
+        @include mini-desktop {
+            font-size: 20px;
+        }
+
+        @include tab {
+            font-size: 18px;
+        }
+
+        @include phone {
+            font-size: 15px;
+        }
     }
 
     p {
         font-size: 24px;
+        @include desktop {
+            font-size: 24px;
+        }
+
+        @include mini-desktop {
+            font-size: 20px;
+        }
+
+        @include tab {
+            font-size: 18px;
+        }
+
+        @include phone {
+            font-size: 15px;
+        }
     }
 
     .quick-links-container {
@@ -332,6 +727,25 @@ p{
             color: #fff;
             text-decoration: none;
             font-size: 24px;
+
+            @include desktop {
+                font-size: 24px;
+            }
+
+            @include mini-desktop {
+                font-size: 20px;
+            }
+            @include tab {
+                font-size: 18px;
+            }
+
+            @include phone {
+                font-size: 15px;
+            }
+        }
+
+        @include tab {
+            max-width: 100%;
         }
     }
 
@@ -345,145 +759,84 @@ p{
     background: #252067;
     padding: 20px 0px;
     border-top: 1px solid white;
-}
-.copy_right {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    p {
-        color: #fff;
-        font-size: 24px;
-        line-height: 21px;
-        margin-bottom: 0px;
-    }
-    @include desktop {
-        font-size: 24px;
-        line-height: 17px;
-    }
 
-    @include phone {
-        flex-direction: column;
+    .copy_right {
+        width: 100%;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
+        
         p {
-            font-size: 14px;
-            line-height: 18px;
-            text-align: center;
-            padding: 10px 0px;
+            color: #fff;
+            font-size: 24px;
+            line-height: 21px;
+            margin-bottom: 0px;
+            
+            @include desktop {
+                font-size: 24px;
+                line-height: 17px;
+            }
+
+            @include mini-desktop {
+                font-size: 20px;
+            }
+
+            @include tab{
+                font-size: 18px;
+            }
+
+            @include phone {
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                padding: 10px 0px;
+            }
+        }
+
+        @include phone {
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
 
 //about us page
 .aboutCover {
-    @include background-cover("../images/contactbanner.png");
-    height: 456px;
-    position: relative;
-    overflow: hidden;
-    color: $text-color;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .color-overlay {
-        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    h1{
-        z-index: 2;
-        margin: 0;
-    }
+    @include cover-section("../images/contactbanner.png");
 }
 
-.aboutsection{
-    .wrapper{
-        padding-top:100px;
+.aboutsection {
+    .wrapper {
+        padding-top: 100px;
     }
-
 }
 
 //contact us page
 .contactCover {
-    @include background-cover("../images/aboutbanner.png");
-    height: 456px;
-    position: relative;
-    overflow: hidden;
-    color: $text-color;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .color-overlay {
-        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    h1{
-        z-index: 2;
-        margin: 0;
-    }
+    @include cover-section("../images/aboutbanner.png");
 }
 
-.mainSection{
-   h1{
-    padding-bottom: 40px;
-   } 
-   h4{
-    padding-bottom: 21px;
-   }
-   p{
-    padding-bottom: 31px;
-   }
-   .form-label{
-    font-size: 24px;
-   }
-   .form-control{
-    background-color:#DBDBDB66;
-   }
+.mainSection {
+    h1 {
+        padding-bottom: 40px;
+    }
+    h4 {
+        padding-bottom: 21px;
+    }
+    p {
+        padding-bottom: 31px;
+    }
+    .form-label {
+        font-size: 24px;
+    }
+    .form-control {
+        background-color: #dbdbdb66;
+    }
 }
 
 //services page
 .serviceCover {
-    @include background-cover("../images/servicebanner.png");
-    height: 456px;
-    position: relative;
-    overflow: hidden;
-    color: $text-color;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .color-overlay {
-        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    h1{
-        z-index: 2;
-        margin: 0;
-    }
+    @include cover-section("../images/servicebanner.png");
 }
 
 .servicessection {
@@ -522,55 +875,29 @@ p{
     }
 }
 
-.serviceDetail{
-    h1{
+.serviceDetail {
+    h1 {
         padding-bottom: 45px;
     }
-    h4{
+    h4 {
         padding-bottom: 20px;
-
     }
-    li{
+    li {
         font-size: 24px;
     }
-    img{
+    img {
         width: 600px;
         padding-top: 70px;
     }
-    .image{
+    .image {
         padding-top: 0px;
         width: 600px;
     }
 }
 
-.masterCover{
-        @include background-cover("../images/equipbanner.png");
-        height: 456px;
-        position: relative;
-        overflow: hidden;
-        color: $text-color;
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        align-items: flex-start;
-    
-        .color-overlay {
-            background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1;
-        }
-        h1{
-            z-index: 2;
-            margin: 0;
-        }
-    }
-
+.masterCover {
+    @include cover-section("../images/equipbanner.png");
+}
 
 .inhouse {
     h1 {
@@ -582,64 +909,40 @@ p{
         gap: 90px;
     }
     .box {
-        position: relative; 
+        position: relative;
         text-align: left;
         // padding-top: 60px;
         // padding-left: 40px;
         // padding-right: 20px;
         // padding-bottom: 20px;
         height: 400px;
-        img{
+        img {
             width: 400px;
             height: 400px;
         }
-        a{
+        a {
             text-decoration: none;
-            color:black;
+            color: black;
             font-size: 24px;
         }
-    }   
+    }
 }
 
-.equipdetail{
-    h1{
+.equipdetail {
+    h1 {
         padding-bottom: 30px;
     }
-    img{
+    img {
         width: 400px;
         height: 400px;
     }
-    ul{
+    ul {
         font-size: 24px;
     }
 }
 
-.clientCover{
-    @include background-cover("../images/clientbanner.png");
-    height: 456px;
-    position: relative;
-    overflow: hidden;
-    color: $text-color;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-
-    .color-overlay {
-        background: linear-gradient(246deg, rgba(0, 0, 0, 0.00) 27.93%, #000 102.46%);
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 1;
-    }
-    h1{
-        z-index: 2;
-        margin: 0;
-    }
+.clientCover {
+    @include cover-section("../images/clientbanner.png");
 }
 
 .clientsection {
