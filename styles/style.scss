@@ -18,21 +18,21 @@ body {
 .sectionTitle {
     font-size: 50px;
 
-        @include desktop {
-            font-size: 50px;
-        }
+    @include desktop {
+        font-size: 50px;
+    }
 
-        @include mini-desktop {
-            font-size: 40px;
-        }
+    @include mini-desktop {
+        font-size: 40px;
+    }
 
-        @include tab {
-            font-size: 30px;
-        }
+    @include tab {
+        font-size: 30px;
+    }
 
-        @include phone {
-            font-size: 20px;
-        }
+    @include phone {
+        font-size: 20px;
+    }
 }
 
 p {
@@ -120,7 +120,6 @@ p {
                 }
 
                 @include tab {
-                    color: #fff;
                     font-size: $navLinkFontSizeTab;
                     padding: $navLinkPaddingTab;
                 }
@@ -199,7 +198,6 @@ p {
         top: 0;
         left: 0;
         z-index: 1;
-        //opacity: $overlay-opacity;
     }
 
     h1,
@@ -343,22 +341,6 @@ p {
 
     h1 {
         margin-bottom: 40px;
-
-        @include desktop {
-            font-size: 50px;
-        }
-
-        @include mini-desktop {
-            font-size: 40px;
-        }
-
-        @include tab {
-            font-size: 30px;
-        }
-
-        @include phone {
-            font-size: 20px;
-        }
     }
 
     .aboutcontent {
@@ -388,22 +370,6 @@ p {
         color: #fff;
         text-align: center;
         padding-bottom: 59px;
-
-        @include desktop {
-            font-size: 50px;
-        }
-
-        @include mini-desktop {
-            font-size: 40px;
-        }
-
-        @include tab {
-            font-size: 30px;
-        }
-
-        @include phone {
-            font-size: 20px;
-        }
     }
 
     .box-container {
@@ -636,12 +602,18 @@ p {
 
     h5 {
         font-size: 30px;
+        @include desktop{
+            font-size: 30px;
+        }
+        @include mini-desktop{
+            font-size: 26px;
+        }
         @include tab {
-            font-size: 28px;
+            font-size: 22px;
         }
 
         @include phone {
-            font-size: 26px;
+            font-size: 18px;
         }
     }
 
@@ -765,13 +737,13 @@ p {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        
+
         p {
             color: #fff;
             font-size: 24px;
             line-height: 21px;
             margin-bottom: 0px;
-            
+
             @include desktop {
                 font-size: 24px;
                 line-height: 17px;
@@ -781,7 +753,7 @@ p {
                 font-size: 20px;
             }
 
-            @include tab{
+            @include tab {
                 font-size: 18px;
             }
 
@@ -808,6 +780,23 @@ p {
 .aboutsection {
     .wrapper {
         padding-top: 100px;
+        img {
+            @include desktop {
+                width: auto;
+            }
+
+            @include mini-desktop {
+                width: 400px;
+            }
+
+            @include tab {
+                width: 370px;
+            }
+
+            @include phone {
+                width: 270px;
+            }
+        }
     }
 }
 
@@ -821,13 +810,43 @@ p {
         padding-bottom: 40px;
     }
     h4 {
-        padding-bottom: 21px;
+        padding-bottom: 24px;
+        @include desktop {
+            font-size: 24px;
+        }
+    
+        @include mini-desktop {
+            font-size: 20px;
+        }
+    
+        @include tab {
+            font-size: 18px;
+        }
+    
+        @include phone {
+            font-size: 15px;
+        }
     }
     p {
         padding-bottom: 31px;
     }
     .form-label {
         font-size: 24px;
+        @include desktop {
+            font-size: 24px;
+        }
+    
+        @include mini-desktop {
+            font-size: 20px;
+        }
+    
+        @include tab {
+            font-size: 18px;
+        }
+    
+        @include phone {
+            font-size: 15px;
+        }
     }
     .form-control {
         background-color: #dbdbdb66;
@@ -849,6 +868,16 @@ p {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
         gap: 51px;
+
+        @include tab {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        @include phone {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
     }
     .box {
         position: relative;
@@ -861,9 +890,33 @@ p {
         padding-bottom: 20px;
         height: 410px;
 
+        @include desktop {
+            height: 410;
+        }
+
+        @include mini-desktop {
+            height: 350px;
+        }
+
+        @include tab {
+            height: 300px;
+        }
+
+        @include phone {
+            height: 250px;
+        }
+
         h3 {
             font-size: 30px;
             padding-bottom: 12px;
+
+            @include tab {
+                font-size: 25px;
+            }
+
+            @include phone {
+                font-size: 20px;
+            }
         }
     }
     .arrow-icon {
@@ -872,6 +925,22 @@ p {
         right: 20px; // Adjust as needed
         font-size: 24px;
         color: black;
+
+        @include tab {
+            font-size: 20px;
+        }
+
+        @include phone {
+            font-size: 15px;
+        }
+    }
+
+    @include tab {
+        padding: 40px 20px;
+    }
+
+    @include phone {
+        padding: 30px 15px;
     }
 }
 
@@ -881,17 +950,59 @@ p {
     }
     h4 {
         padding-bottom: 20px;
+        @include desktop {
+            font-size: 24px;
+        }
+    
+        @include mini-desktop {
+            font-size: 20px;
+        }
+    
+        @include tab {
+            font-size: 18px;
+        }
+    
+        @include phone {
+            font-size: 15px;
+        }
     }
     li {
         font-size: 24px;
+        @include desktop {
+            font-size: 24px;
+        }
+    
+        @include mini-desktop {
+            font-size: 20px;
+        }
+    
+        @include tab {
+            font-size: 18px;
+        }
+    
+        @include phone {
+            font-size: 15px;
+        }
     }
     img {
         width: 600px;
         padding-top: 70px;
-    }
-    .image {
-        padding-top: 0px;
-        width: 600px;
+
+        @include desktop {
+            width: 600px;
+        }
+
+        @include mini-desktop {
+            width: 300px;
+        }
+
+        @include tab {
+            width: 200px;
+        }
+
+        @include phone {
+            width: 150px;
+        }
     }
 }
 
@@ -911,10 +1022,6 @@ p {
     .box {
         position: relative;
         text-align: left;
-        // padding-top: 60px;
-        // padding-left: 40px;
-        // padding-right: 20px;
-        // padding-bottom: 20px;
         height: 400px;
         img {
             width: 400px;
@@ -924,6 +1031,22 @@ p {
             text-decoration: none;
             color: black;
             font-size: 24px;
+
+            @include desktop {
+                font-size: 24px;
+            }
+        
+            @include mini-desktop {
+                font-size: 20px;
+            }
+        
+            @include tab {
+                font-size: 18px;
+            }
+        
+            @include phone {
+                font-size: 15px;
+            }
         }
     }
 }
@@ -935,6 +1058,26 @@ p {
     img {
         width: 400px;
         height: 400px;
+
+        @include desktop {
+            width: 400px;
+            height: 400px;
+        }
+
+        @include mini-desktop {
+            width: 350px;
+            height: 350px;
+        }
+
+        @include tab {
+            width: 250px;
+            height: 250px;
+        }
+
+        @include phone {
+            width: 150px;
+            height: 150px;
+        }
     }
     ul {
         font-size: 24px;
@@ -949,18 +1092,15 @@ p {
     padding-bottom: 100px;
     h1 {
         color: black;
-        //text-align: center;
         padding-bottom: 37px;
         padding-top: 100px;
     }
     .box-container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-        //gap: 51px;
     }
     .box {
         position: relative;
         background: #fff;
-        //text-align: left;
     }
 }

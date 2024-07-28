@@ -130,7 +130,6 @@ p {
 }
 @media (max-width: 767px) {
   .mainHeader .navbar .navbar__menu .navbar__links {
-    color: #fff;
     font-size: 12px;
     padding: 6px 10px;
   }
@@ -388,26 +387,6 @@ p {
 .aboutsection h1 {
   margin-bottom: 40px;
 }
-@media (min-width: 1024px) {
-  .aboutsection h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 1023px) and (min-width: 768px) {
-  .aboutsection h1 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .aboutsection h1 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 480px) {
-  .aboutsection h1 {
-    font-size: 20px;
-  }
-}
 .aboutsection .aboutcontent {
   padding-left: 50px;
 }
@@ -439,26 +418,6 @@ p {
   color: #fff;
   text-align: center;
   padding-bottom: 59px;
-}
-@media (min-width: 1024px) {
-  .servicesection h1 {
-    font-size: 50px;
-  }
-}
-@media (max-width: 1023px) and (min-width: 768px) {
-  .servicesection h1 {
-    font-size: 40px;
-  }
-}
-@media (max-width: 767px) {
-  .servicesection h1 {
-    font-size: 30px;
-  }
-}
-@media (max-width: 480px) {
-  .servicesection h1 {
-    font-size: 20px;
-  }
 }
 .servicesection .box-container {
   display: grid;
@@ -710,14 +669,24 @@ p {
 .mainFooter h5 {
   font-size: 30px;
 }
+@media (min-width: 1024px) {
+  .mainFooter h5 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mainFooter h5 {
+    font-size: 26px;
+  }
+}
 @media (max-width: 767px) {
   .mainFooter h5 {
-    font-size: 28px;
+    font-size: 22px;
   }
 }
 @media (max-width: 480px) {
   .mainFooter h5 {
-    font-size: 26px;
+    font-size: 18px;
   }
 }
 .mainFooter .address {
@@ -921,6 +890,26 @@ p {
 .aboutsection .wrapper {
   padding-top: 100px;
 }
+@media (min-width: 1024px) {
+  .aboutsection .wrapper img {
+    width: auto;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .aboutsection .wrapper img {
+    width: 400px;
+  }
+}
+@media (max-width: 767px) {
+  .aboutsection .wrapper img {
+    width: 370px;
+  }
+}
+@media (max-width: 480px) {
+  .aboutsection .wrapper img {
+    width: 270px;
+  }
+}
 
 .contactCover {
   background: url(../images/aboutbanner.png) no-repeat center center;
@@ -954,13 +943,53 @@ p {
   padding-bottom: 40px;
 }
 .mainSection h4 {
-  padding-bottom: 21px;
+  padding-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  .mainSection h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mainSection h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .mainSection h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .mainSection h4 {
+    font-size: 15px;
+  }
 }
 .mainSection p {
   padding-bottom: 31px;
 }
 .mainSection .form-label {
   font-size: 24px;
+}
+@media (min-width: 1024px) {
+  .mainSection .form-label {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .mainSection .form-label {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .mainSection .form-label {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .mainSection .form-label {
+    font-size: 15px;
+  }
 }
 .mainSection .form-control {
   background-color: rgba(219, 219, 219, 0.4);
@@ -1004,6 +1033,18 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
   gap: 51px;
 }
+@media (max-width: 767px) {
+  .servicessection .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+}
+@media (max-width: 480px) {
+  .servicessection .box-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
 .servicessection .box {
   position: relative;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
@@ -1015,9 +1056,39 @@ p {
   padding-bottom: 20px;
   height: 410px;
 }
+@media (min-width: 1024px) {
+  .servicessection .box {
+    height: 410;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .servicessection .box {
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .servicessection .box {
+    height: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .servicessection .box {
+    height: 250px;
+  }
+}
 .servicessection .box h3 {
   font-size: 30px;
   padding-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .servicessection .box h3 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .servicessection .box h3 {
+    font-size: 20px;
+  }
 }
 .servicessection .arrow-icon {
   position: absolute;
@@ -1026,6 +1097,26 @@ p {
   font-size: 24px;
   color: black;
 }
+@media (max-width: 767px) {
+  .servicessection .arrow-icon {
+    font-size: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .servicessection .arrow-icon {
+    font-size: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .servicessection {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .servicessection {
+    padding: 30px 15px;
+  }
+}
 
 .serviceDetail h1 {
   padding-bottom: 45px;
@@ -1033,16 +1124,72 @@ p {
 .serviceDetail h4 {
   padding-bottom: 20px;
 }
+@media (min-width: 1024px) {
+  .serviceDetail h4 {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .serviceDetail h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .serviceDetail h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceDetail h4 {
+    font-size: 15px;
+  }
+}
 .serviceDetail li {
   font-size: 24px;
+}
+@media (min-width: 1024px) {
+  .serviceDetail li {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .serviceDetail li {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .serviceDetail li {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceDetail li {
+    font-size: 15px;
+  }
 }
 .serviceDetail img {
   width: 600px;
   padding-top: 70px;
 }
-.serviceDetail .image {
-  padding-top: 0px;
-  width: 600px;
+@media (min-width: 1024px) {
+  .serviceDetail img {
+    width: 600px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .serviceDetail img {
+    width: 300px;
+  }
+}
+@media (max-width: 767px) {
+  .serviceDetail img {
+    width: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .serviceDetail img {
+    width: 150px;
+  }
 }
 
 .masterCover {
@@ -1095,6 +1242,26 @@ p {
   color: black;
   font-size: 24px;
 }
+@media (min-width: 1024px) {
+  .inhouse .box a {
+    font-size: 24px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .inhouse .box a {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .inhouse .box a {
+    font-size: 18px;
+  }
+}
+@media (max-width: 480px) {
+  .inhouse .box a {
+    font-size: 15px;
+  }
+}
 
 .equipdetail h1 {
   padding-bottom: 30px;
@@ -1102,6 +1269,30 @@ p {
 .equipdetail img {
   width: 400px;
   height: 400px;
+}
+@media (min-width: 1024px) {
+  .equipdetail img {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 1023px) and (min-width: 768px) {
+  .equipdetail img {
+    width: 350px;
+    height: 350px;
+  }
+}
+@media (max-width: 767px) {
+  .equipdetail img {
+    width: 250px;
+    height: 250px;
+  }
+}
+@media (max-width: 480px) {
+  .equipdetail img {
+    width: 150px;
+    height: 150px;
+  }
 }
 .equipdetail ul {
   font-size: 24px;
